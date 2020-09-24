@@ -1,4 +1,6 @@
 FROM ruby:2.7.1
+
+# RUNはコマンド実行
 RUN apt-get update -qq && apt-get install -y build-essential libpq-dev nodejs
 
 # コンテナ内のルート直下にdocker-practiceというディレクトリを作成
